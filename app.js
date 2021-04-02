@@ -53,6 +53,8 @@ app.get("*", (req, res) => {
   res.send("Error 404: Not Found!!");
 });
 
-app.listen(5000, () => {
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => {
   console.log("Connected to Server on port 5000");
 });
